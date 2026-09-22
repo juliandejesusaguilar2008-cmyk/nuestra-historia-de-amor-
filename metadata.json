@@ -1,0 +1,6 @@
+{
+  "name": "Nuestra Historia de Amor",
+  "description": "Página web romántica y emotiva para celebrar 7 meses de novios y su cumpleaños especial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

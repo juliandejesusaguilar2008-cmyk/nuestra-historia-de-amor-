@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-serif-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-script-romantic {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Delicado marco estilo polaroid con sombra suave */
+.polaroid-card {
+  background: #ffffff;
+  padding: 12px 12px 24px 12px;
+  box-shadow: 0 10px 25px -5px rgba(122, 28, 52, 0.08), 0 8px 10px -6px rgba(122, 28, 52, 0.04);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.polaroid-card:hover {
+  transform: translateY(-4px) rotate(-1deg);
+  box-shadow: 0 20px 30px -10px rgba(122, 28, 52, 0.15);
+}
+
+/* Efecto carta artesanal con borde sutil */
+.letter-paper {
+  background: radial-gradient(circle at top right, #fffaf5, #fdf4ed);
+  border: 1px solid rgba(217, 119, 138, 0.25);
+  box-shadow: 0 12px 35px -10px rgba(122, 28, 52, 0.09);
+  position: relative;
+}
+
+.letter-paper::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 1px dashed rgba(184, 80, 102, 0.18);
+  pointer-events: none;
+  border-radius: 12px;
+}
+
